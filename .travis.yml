@@ -15,7 +15,7 @@ before_script:
   - "sh -e /etc/init.d/xvfb start"
   - "/sbin/start-stop-daemon --start --quiet --pidfile /tmp/custom_xvfb_99.pid --make-pidfile --background --exec /usr/bin/Xvfb -- :99 -ac -screen 0 1280x1024x16"
 script:
-  - "pybot --outputdir MyBuild /home/travis/build/Rafikhan29/MabotDemo/automation_testsuites/TestCases/Home.txt"
+  - "pybot --outputdir /home/travis/build/Rafikhan29/MabotDemo/Results/results.tar.gz /home/travis/build/Rafikhan29/MabotDemo/automation_testsuites/TestCases/Home.txt"
 
 notifications:
   email:
@@ -25,3 +25,7 @@ env:
   - BROWSER=firefox
   #- BROWSER=ie # will be added when we have completed SauceLabs CI
   #- BROWSER=safari # will be added after #247 merged
+
+after_success: # and this only on success
+  - "travis-artifacts upload --path /home/travis/build/Rafikhan29/MabotDemo/Results/build.tar.gz"
+
