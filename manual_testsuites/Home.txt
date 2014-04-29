@@ -1,0 +1,7 @@
+*** Test Cases ***
+ValidGmail Login
+    [Documentation]    Check the Gmail Login with Invalid Details
+    Open browser and enter url     Test Data: http://www.gmail.com/    Expected Result: The gmail login page should be displayed.
+    Enter Email address    Test Data: Pmr@gmail.com
+    Enter password    Test Data: 123
+    Click Sign In button    \    Expected Result: User should be able to login

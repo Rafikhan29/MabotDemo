@@ -1,0 +1,3 @@
+*** Variables ***
+${Login_Url}      https://www.gmail.com/
+${Browser_Name}    ff

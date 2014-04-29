@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20140423 16:09:31.438" generator="Rebot 2.7.7 (Python 2.7.5 on win32)">
+<suite source="c:\users\mahendra\desktop\mm" id="s1" name="Mm">
+<suite source="c:\users\mahendra\desktop\mm\automation_testsuites" id="s1-s1" name="Automation Testsuites">
+<suite source="c:\users\mahendra\desktop\mm\automation_testsuites\TestCases" id="s1-s1-s1" name="TestCases">
+<suite source="c:\users\mahendra\desktop\mm\automation_testsuites\TestCases\Home.txt" id="s1-s1-s1-s1" name="Home">
+<test id="s1-s1-s1-s1-t1" timeout="" name="GamilLogin">
+<kw type="kw" name="Open Browser" timeout="">
+<doc></doc>
+<arguments>
+<arg>${Login_Url}</arg>
+<arg>${Browser_Name}</arg>
+</arguments>
+<status status="FAIL" endtime="20000101 00:00:00.000" starttime="20000101 00:00:00.000"></status>
+</kw>
+<kw type="kw" name="Maximize Browser Window" timeout="">
+<doc></doc>
+<arguments>
+</arguments>
+<status status="FAIL" endtime="20000101 00:00:00.000" starttime="20000101 00:00:00.000"></status>
+</kw>
+<kw type="kw" name="Wait Until Element Is Visible" timeout="">
+<doc></doc>
+<arguments>
+<arg>${textbox.login.username}</arg>
+<arg>30s</arg>
+</arguments>
+<status status="FAIL" endtime="20000101 00:00:00.000" starttime="20000101 00:00:00.000"></status>
+</kw>
+<kw type="kw" name="Input Text" timeout="">
+<doc></doc>
+<arguments>
+<arg>${textbox.login.username}</arg>
+<arg>Pmr</arg>
+</arguments>
+<status status="FAIL" endtime="20000101 00:00:00.000" starttime="20000101 00:00:00.000"></status>
+</kw>
+<kw type="kw" name="Input Password" timeout="">
+<doc></doc>
+<arguments>
+<arg>${textbox.login.password}</arg>
+<arg>123</arg>
+</arguments>
+<status status="FAIL" endtime="20000101 00:00:00.000" starttime="20000101 00:00:00.000"></status>
+</kw>
+<kw type="kw" name="Click Element" timeout="">
+<doc></doc>
+<arguments>
+<arg>${button.login.signin}</arg>
+</arguments>
+<status status="FAIL" endtime="20000101 00:00:00.000" starttime="20000101 00:00:00.000"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20000101 00:00:00.000" critical="yes" starttime="20000101 00:00:00.000">Not Executed!</status>
+</test>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="FAIL" endtime="20000101 00:00:00.000" starttime="20000101 00:00:00.000"></status>
+</suite>
+<suite source="c:\users\mahendra\desktop\mm\automation_testsuites\TestCases\TestSuite.txt" id="s1-s1-s1-s2" name="TestSuite">
+<test id="s1-s1-s1-s2-t1" timeout="" name="SampleTC1">
+<kw type="kw" name="Open Browser" timeout="">
+<doc></doc>
+<arguments>
+<arg>https://www.google.com</arg>
+<arg>firefox</arg>
+</arguments>
+<status status="FAIL" endtime="20000101 00:00:00.000" starttime="20000101 00:00:00.000"></status>
+</kw>
+<kw type="kw" name="Get Title" timeout="">
+<doc></doc>
+<arguments>
+</arguments>
+<status status="FAIL" endtime="20000101 00:00:00.000" starttime="20000101 00:00:00.000"></status>
+</kw>
+<kw type="kw" name="Run Keyword If" timeout="">
+<doc></doc>
+<arguments>
+<arg>'${PageTitle}'=='Google'</arg>
+<arg>Log</arg>
+<arg>the testcase is passed</arg>
+<arg>ELSE</arg>
+<arg>Fail</arg>
+<arg>the testcase is failed</arg>
+</arguments>
+<status status="FAIL" endtime="20000101 00:00:00.000" starttime="20000101 00:00:00.000"></status>
+</kw>
+<kw type="kw" name="Close Browser" timeout="">
+<doc></doc>
+<arguments>
+</arguments>
+<status status="FAIL" endtime="20000101 00:00:00.000" starttime="20000101 00:00:00.000"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20000101 00:00:00.000" critical="yes" starttime="20000101 00:00:00.000">Not Executed!</status>
+</test>
+<test id="s1-s1-s1-s2-t2" timeout="" name="SampleTC2">
+<kw type="kw" name="Open Browser" timeout="">
+<doc></doc>
+<arguments>
+<arg>https://www.google.com</arg>
+<arg>firefox</arg>
+</arguments>
+<status status="FAIL" endtime="20000101 00:00:00.000" starttime="20000101 00:00:00.000"></status>
+</kw>
+<kw type="kw" name="Get Title" timeout="">
+<doc></doc>
+<arguments>
+</arguments>
+<status status="FAIL" endtime="20000101 00:00:00.000" starttime="20000101 00:00:00.000"></status>
+</kw>
+<kw type="kw" name="Run Keyword If" timeout="">
+<doc></doc>
+<arguments>
+<arg>'${PageTitle}'!='Yahoo'</arg>
+<arg>Log</arg>
+<arg>the testcase is passed</arg>
+<arg>ELSE</arg>
+<arg>Fail</arg>
+<arg>the testcase is failed</arg>
+</arguments>
+<status status="FAIL" endtime="20000101 00:00:00.000" starttime="20000101 00:00:00.000"></status>
+</kw>
+<kw type="kw" name="Close Browser" timeout="">
+<doc></doc>
+<arguments>
+</arguments>
+<status status="FAIL" endtime="20000101 00:00:00.000" starttime="20000101 00:00:00.000"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20000101 00:00:00.000" critical="yes" starttime="20000101 00:00:00.000">Not Executed!</status>
+</test>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="FAIL" endtime="20000101 00:00:00.000" starttime="20000101 00:00:00.000"></status>
+</suite>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="FAIL" endtime="20000101 00:00:00.000" starttime="20000101 00:00:00.000"></status>
+</suite>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="FAIL" endtime="20000101 00:00:00.000" starttime="20000101 00:00:00.000"></status>
+</suite>
+<suite source="c:\users\mahendra\desktop\mm\manual_testsuites" id="s1-s2" name="Manual Testsuites">
+<suite source="c:\users\mahendra\desktop\mm\manual_testsuites\Home.txt" id="s1-s2-s1" name="Home">
+<test id="s1-s2-s1-t1" timeout="" name="Gmail Login">
+<kw type="kw" name="Open browser and enter url as &quot;http://gmail.com&quot;" timeout="">
+<doc></doc>
+<arguments>
+<arg>http://www.gmail.com/</arg>
+<arg>The gmail login page should be displayed.</arg>
+</arguments>
+<status status="PASS" endtime="20140423 16:09:01.613" starttime="20140423 16:07:36.204"></status>
+</kw>
+<kw type="kw" name="Enter Email address" timeout="">
+<doc></doc>
+<arguments>
+<arg>Pmr@gmail.com</arg>
+<arg>The username text fileld should be \ \ displayed enter text value.</arg>
+</arguments>
+<status status="PASS" endtime="20140423 16:09:01.613" starttime="20140423 16:07:37.698"></status>
+</kw>
+<kw type="kw" name="Enter password" timeout="">
+<doc></doc>
+<arguments>
+<arg>123</arg>
+<arg>The Password password fileld should be displayed enter value in encrypt format.</arg>
+</arguments>
+<status status="PASS" endtime="20140423 16:09:01.613" starttime="20140423 16:07:38.945"></status>
+</kw>
+<kw type="kw" name="Click Sign In button" timeout="">
+<doc></doc>
+<arguments>
+<arg></arg>
+<arg>User should be able to login</arg>
+</arguments>
+<status status="PASS" endtime="20140423 16:09:01.613" starttime="20140423 16:07:40.338"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20140423 16:09:01.613" critical="yes" starttime="20140423 16:07:40.338">Not Executed!</status>
+</test>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="PASS" endtime="20000101 00:00:00.000" starttime="20000101 00:00:00.000"></status>
+</suite>
+<suite source="c:\users\mahendra\desktop\mm\manual_testsuites\TestSuite.txt" id="s1-s2-s2" name="TestSuite">
+<test id="s1-s2-s2-t1" timeout="" name="SampleTC1">
+<kw type="kw" name="Open browser and enter url as &quot;https://www.google.com&quot;" timeout="">
+<doc></doc>
+<arguments>
+<arg>https://www.google.com</arg>
+<arg>The google search page should be displayed.</arg>
+</arguments>
+<status status="PASS" endtime="20140423 16:09:01.613" starttime="20140423 16:07:46.507"></status>
+</kw>
+<kw type="kw" name="Verify that the Title should contains &quot;Google&quot;" timeout="">
+<doc></doc>
+<arguments>
+<arg></arg>
+<arg>"Google" title should be displayed.</arg>
+</arguments>
+<status status="PASS" endtime="20140423 16:09:01.613" starttime="20140423 16:07:47.886"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20140423 16:09:01.613" critical="yes" starttime="20140423 16:07:47.886">Not Executed!</status>
+</test>
+<test id="s1-s2-s2-t2" timeout="" name="SampleTC2">
+<kw type="kw" name="Open browser and enter url as &quot;https://www.google.com&quot;" timeout="">
+<doc></doc>
+<arguments>
+<arg>https://www.google.com</arg>
+<arg>The google search page should be displayed.</arg>
+</arguments>
+<status status="PASS" endtime="20140423 16:09:01.613" starttime="20140423 16:07:51.805"></status>
+</kw>
+<kw type="kw" name="Verify that the Title should not contains &quot;Yahoo&quot;" timeout="">
+<doc></doc>
+<arguments>
+<arg></arg>
+<arg>"Yahoo" title Should not be displayed.</arg>
+</arguments>
+<status status="PASS" endtime="20140423 16:09:01.613" starttime="20140423 16:07:53.227"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20140423 16:09:01.613" critical="yes" starttime="20140423 16:07:53.227">Not Executed!</status>
+</test>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="PASS" endtime="20000101 00:00:00.000" starttime="20000101 00:00:00.000"></status>
+</suite>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="PASS" endtime="20000101 00:00:00.000" starttime="20000101 00:00:00.000"></status>
+</suite>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="FAIL" endtime="20000101 00:00:00.000" starttime="20000101 00:00:00.000"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="3" pass="3">Critical Tests</stat>
+<stat fail="3" pass="3">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="3" pass="3" id="s1" name="Mm">Mm</stat>
+<stat fail="3" pass="0" id="s1-s1" name="Automation Testsuites">Mm.Automation Testsuites</stat>
+<stat fail="3" pass="0" id="s1-s1-s1" name="TestCases">Mm.Automation Testsuites.TestCases</stat>
+<stat fail="1" pass="0" id="s1-s1-s1-s1" name="Home">Mm.Automation Testsuites.TestCases.Home</stat>
+<stat fail="2" pass="0" id="s1-s1-s1-s2" name="TestSuite">Mm.Automation Testsuites.TestCases.TestSuite</stat>
+<stat fail="0" pass="3" id="s1-s2" name="Manual Testsuites">Mm.Manual Testsuites</stat>
+<stat fail="0" pass="1" id="s1-s2-s1" name="Home">Mm.Manual Testsuites.Home</stat>
+<stat fail="0" pass="2" id="s1-s2-s2" name="TestSuite">Mm.Manual Testsuites.TestSuite</stat>
+</suite>
+</statistics>
+</robot>

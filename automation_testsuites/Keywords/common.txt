@@ -1,0 +1,15 @@
+*** Settings ***
+Resource          super.txt
+
+*** Keywords ***
+Start Application
+    [Arguments]    ${url}    ${browser}
+    Open Application    ${url}    ${browser}
+
+Stop Application
+    Close All Browsers
+
+Open Application
+    [Arguments]    ${url}    ${browser}
+    Open Browser    ${url}    ${browser}
+    Maximize Browser Window

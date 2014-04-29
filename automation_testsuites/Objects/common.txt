@@ -1,0 +1,6 @@
+*** Variables ***
+${link.common.Images}    //a[text()='Images']
+${textbox.login.username}    Email
+${textbox.login.password}    Passwd
+${button.login.signin}    signIn
+${label.login.error1}    errormsg_0_Email

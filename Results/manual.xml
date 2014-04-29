@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20140423 19:20:25.202" generator="Rebot 2.7.7 (Python 2.7.5 on win32)">
+<suite source="d:\mm\manual_testsuites" id="s1" name="Manual Testsuites">
+<suite source="d:\mm\manual_testsuites\Home.txt" id="s1-s1" name="Home">
+<test id="s1-s1-t1" timeout="" name="ValidGmail Login">
+<kw type="kw" name="Open browser and enter url" timeout="">
+<doc></doc>
+<arguments>
+<arg>Test Data: http://www.gmail.com/</arg>
+<arg>Expected Result: The gmail login page should be displayed.</arg>
+</arguments>
+<status status="PASS" endtime="20140423 19:20:25.201" starttime="20140423 19:19:02.127"></status>
+</kw>
+<kw type="kw" name="Enter Email address" timeout="">
+<doc></doc>
+<arguments>
+<arg>Test Data: Pmr@gmail.com</arg>
+</arguments>
+<status status="PASS" endtime="20140423 19:20:25.201" starttime="20140423 19:19:03.536"></status>
+</kw>
+<kw type="kw" name="Enter password" timeout="">
+<doc></doc>
+<arguments>
+<arg>Test Data: 123</arg>
+</arguments>
+<status status="PASS" endtime="20140423 19:20:25.201" starttime="20140423 19:19:05.068"></status>
+</kw>
+<kw type="kw" name="Click Sign In button" timeout="">
+<doc></doc>
+<arguments>
+<arg></arg>
+<arg>Expected Result: User should be able to login</arg>
+</arguments>
+<msg timestamp="20140423 19:20:25.000" level="FAIL">Actual Result: Error message is displayed as "The email and password is incorrect".</msg>
+<status status="FAIL" endtime="20140423 19:20:25.201" starttime="20140423 19:19:55.827">Actual Result: Error message is displayed as "The email and password is incorrect".</status>
+</kw>
+<doc>Check the Gmail Login with Invalid Details</doc>
+<tags>
+</tags>
+<status status="FAIL" endtime="20140423 19:20:25.201" critical="yes" starttime="20140423 19:19:08.795">Not Executed!</status>
+</test>
+<test id="s1-s1-t2" timeout="" name="LoginToWizInterface">
+<kw type="kw" name="Open browser and enter app URL" timeout="">
+<doc></doc>
+<arguments>
+<arg>Test Data: mmtxtest.mysatori.com</arg>
+<arg>Expected Result : Login page should be displayed</arg>
+</arguments>
+<status status="PASS" endtime="20140423 19:20:25.201" starttime="20140423 19:19:58.719"></status>
+</kw>
+<kw type="kw" name="Enter Student User ID" timeout="">
+<doc></doc>
+<arguments>
+<arg>Test Data: s.student1</arg>
+</arguments>
+<status status="PASS" endtime="20140423 19:20:25.201" starttime="20140423 19:20:00.142"></status>
+</kw>
+<kw type="kw" name="Enter Password" timeout="">
+<doc></doc>
+<arguments>
+<arg>Test Data: s.student1</arg>
+</arguments>
+<status status="PASS" endtime="20140423 19:20:25.201" starttime="20140423 19:20:01.529"></status>
+</kw>
+<kw type="kw" name="Enter Assignment Code" timeout="">
+<doc></doc>
+<arguments>
+<arg>Test Data: HK5</arg>
+</arguments>
+<status status="PASS" endtime="20140423 19:20:25.201" starttime="20140423 19:20:02.941"></status>
+</kw>
+<kw type="kw" name="Click On Sign IN Button" timeout="">
+<doc></doc>
+<arguments>
+<arg></arg>
+<arg>Home Page/Assignment Page</arg>
+</arguments>
+<status status="PASS" endtime="20140423 19:20:25.201" starttime="20140423 19:20:04.278"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20140423 19:20:25.201" critical="yes" starttime="20140423 19:20:04.278">Not Executed!</status>
+</test>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="FAIL" endtime="20000101 00:00:00.000" starttime="20000101 00:00:00.000"></status>
+</suite>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="FAIL" endtime="20000101 00:00:00.000" starttime="20000101 00:00:00.000"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="1" pass="1">Critical Tests</stat>
+<stat fail="1" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="1" pass="1" id="s1" name="Manual Testsuites">Manual Testsuites</stat>
+<stat fail="1" pass="1" id="s1-s1" name="Home">Manual Testsuites.Home</stat>
+</suite>
+</statistics>
+</robot>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20140423 19:18:09.082" generator="Robot 2.8.4 (Python 2.7.5 on win32)">
+<suite source="D:\MM\automation_testsuites\TestCases\Home.txt" id="s1" name="Home">
+<test id="s1-t1" name="InvalidGmailLogin">
+<kw type="kw" name="Selenium2Library.Open Browser">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${Login_Url}</arg>
+<arg>${Browser_Name}</arg>
+</arguments>
+<msg timestamp="20140423 19:18:09.423" level="INFO">Opening browser 'ff' to base url 'https://www.gmail.com/'</msg>
+<status status="PASS" endtime="20140423 19:18:16.321" starttime="20140423 19:18:09.423"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Maximize Browser Window">
+<doc>Maximizes current browser window.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20140423 19:18:16.949" starttime="20140423 19:18:16.322"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Wait Until Element Is Visible">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>${textbox.login.username}</arg>
+<arg>30s</arg>
+</arguments>
+<status status="PASS" endtime="20140423 19:18:17.003" starttime="20140423 19:18:16.949"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Text">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>${textbox.login.username}</arg>
+<arg>asd</arg>
+</arguments>
+<msg timestamp="20140423 19:18:17.004" level="INFO">Typing text 'asd' into text field 'Email'</msg>
+<status status="PASS" endtime="20140423 19:18:17.097" starttime="20140423 19:18:17.004"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Input Password">
+<doc>Types the given password into text field identified by `locator`.</doc>
+<arguments>
+<arg>${textbox.login.password}</arg>
+<arg>dsa</arg>
+</arguments>
+<msg timestamp="20140423 19:18:17.098" level="INFO">Typing password into text field 'Passwd'</msg>
+<status status="PASS" endtime="20140423 19:18:17.503" starttime="20140423 19:18:17.098"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Click Element">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>${button.login.signin}</arg>
+</arguments>
+<msg timestamp="20140423 19:18:17.504" level="INFO">Clicking element 'signIn'.</msg>
+<status status="PASS" endtime="20140423 19:18:17.602" starttime="20140423 19:18:17.504"></status>
+</kw>
+<kw type="kw" name="Selenium2Library.Wait Until Element Is Visible">
+<doc>Waits until element specified with `locator` is visible.</doc>
+<arguments>
+<arg>id=errormsg_0_Passwd</arg>
+</arguments>
+<status status="PASS" endtime="20140423 19:18:18.418" starttime="20140423 19:18:17.603"></status>
+</kw>
+<kw type="kw" name="${LoginError} = Selenium2Library.Get Text">
+<doc>Returns the text value of element identified by `locator`.</doc>
+<arguments>
+<arg>id=errormsg_0_Passwd</arg>
+</arguments>
+<msg timestamp="20140423 19:18:18.463" level="INFO">${LoginError} = The email or password you entered is incorrect. ?</msg>
+<status status="PASS" endtime="20140423 19:18:18.463" starttime="20140423 19:18:18.420"></status>
+</kw>
+<kw type="kw" name="BuiltIn.Should Contain">
+<doc>Fails if `item1` does not contain `item2` one or more times.</doc>
+<arguments>
+<arg>${LoginError}</arg>
+<arg>email or password you entered is incorrect.</arg>
+</arguments>
+<status status="PASS" endtime="20140423 19:18:18.464" starttime="20140423 19:18:18.464"></status>
+</kw>
+<kw type="teardown" name="common.Stop Application">
+<doc></doc>
+<arguments>
+</arguments>
+<kw type="kw" name="Selenium2Library.Close All Browsers">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<arguments>
+</arguments>
+<status status="PASS" endtime="20140423 19:18:18.591" starttime="20140423 19:18:18.466"></status>
+</kw>
+<status status="PASS" endtime="20140423 19:18:18.591" starttime="20140423 19:18:18.465"></status>
+</kw>
+<doc></doc>
+<tags>
+</tags>
+<status status="PASS" endtime="20140423 19:18:18.591" critical="yes" starttime="20140423 19:18:09.422"></status>
+</test>
+<doc></doc>
+<metadata>
+</metadata>
+<status status="PASS" endtime="20140423 19:18:18.593" starttime="20140423 19:18:09.083"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" pass="1" id="s1" name="Home">Home</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

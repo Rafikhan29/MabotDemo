@@ -1,0 +1,14 @@
+*** Settings ***
+Library           Selenium2Library
+Library           Process
+Library           AutoItLibrary
+Library           OperatingSystem
+Library           Dialogs
+Library           Screenshot
+Library           Collections
+Library           DatabaseLibrary
+Library           String
+Library           platform
+Resource          common.txt
+Resource          global.txt
+Resource          ../Objects/common.txt

@@ -1,0 +1,15 @@
+*** Settings ***
+Resource          ../Keywords/super.txt
+
+*** Test Cases ***
+InvalidGmailLogin
+    Open Browser    ${Login_Url}    ${Browser_Name}
+    Maximize Browser Window
+    Wait Until Element Is Visible    ${textbox.login.username}    30s
+    Input Text    ${textbox.login.username}    asd
+    Input Password    ${textbox.login.password}    dsa
+    Click Element    ${button.login.signin}
+    Wait Until Element Is Visible    id=errormsg_0_Passwd
+    ${LoginError}    Get Text    id=errormsg_0_Passwd
+    Should Contain    ${LoginError}    email or password you entered is incorrect.
+    [Teardown]    Stop Application
