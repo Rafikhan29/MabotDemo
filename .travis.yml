@@ -9,6 +9,8 @@ node_js:
 
 #before_script:
 install:
+  - npm install zmq
+  #- npm install
   - npm install zerorpc
  # - bundle install
  # - bundle exec rakep
