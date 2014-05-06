@@ -9,8 +9,9 @@ node_js:
 
 #before_script:
 install:
+  - node-gyp rebuild --msvs_version=2012
   - npm install zmq
-  #- npm install
+  - npm install
   - npm install zerorpc
  # - bundle install
  # - bundle exec rakep
