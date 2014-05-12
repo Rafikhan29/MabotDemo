@@ -18,6 +18,11 @@ before_script:
 script:
   - "pybot --outputdir MyBuild /home/travis/build/Rafikhan29/MabotDemo/automation_testsuites/TestCases/Home.txt"
   #- python client.py
+  
+  addons:
+  sauce_connect: true
+    #username: "Your Sauce Labs username"
+    #access_key: "Your Sauce Labs access key"
 
 notifications:
   email:
