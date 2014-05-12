@@ -32,7 +32,10 @@ notifications:
   email:
     - vijaykumar.madi@gmail.com 
 env:
-  matrix:
+  global:
+   - SAUCE_USERNAME: "Rafikhan29"
+   - secure: "47ab59b8-9b87-4433-8fa1-b02111cabbba"
+
   - BROWSER=firefox
   #- BROWSER=ie # will be added when we have completed SauceLabs CI
   #- BROWSER=safari # will be added after #247 merged
