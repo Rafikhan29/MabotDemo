@@ -1,3 +1,5 @@
 *** Variables ***
 ${Login_Url}      https://www.gmail.com/
-${Browser_Name}    ff
+${Browser_Name}    firefox
+${SELENIUM HOST}    http://Rafikhan29:47ab59b8-9b87-4433-8fa1-b02111cabbba@ondemand.saucelabs.com:80/wd/hub
+${DESIRED_CAPABILITIES}    name:Testing RobotFramework Selenium2Library,platform:Windows 7
