@@ -6,8 +6,8 @@ InvalidGmailLogin
     Open Browser    ${Login_Url}    ${Browser_Name}    remote_url=${SELENIUM HOST}    desired_capabilities=${DESIRED_CAPABILITIES}
     Maximize Browser Window
     Wait Until Element Is Visible    ${textbox.login.username}    30s
-    Input Text    ${textbox.login.username}    asd
-    Input Password    ${textbox.login.password}    dsa
+    Input Text    ${textbox.login.username}    xyz
+    Input Password    ${textbox.login.password}    xyz
     Click Element    ${button.login.signin}
     Wait Until Element Is Visible    id=errormsg_0_Passwd
     ${LoginError}    Get Text    id=errormsg_0_Passwd
