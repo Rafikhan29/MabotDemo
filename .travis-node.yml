@@ -16,7 +16,8 @@ install:
  # - bundle install
  # - bundle exec rakep
 
-script: node client.js
+script: 
+   - node client.js
 
 notifications:
   email:
