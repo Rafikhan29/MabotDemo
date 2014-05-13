@@ -3,7 +3,7 @@ Resource          ../Keywords/super.txt
 
 *** Test Cases ***
 InvalidGmailLogin
-    Open Browser    ${Login_Url}    ${Browser_Name}    remote_url=${SELENIUM HOST}    desired_capabilities=${DESIRED_CAPABILITIES}
+    Open Browser    ${Login_Url}    ${Browser_Name}    
     Maximize Browser Window
     Wait Until Element Is Visible    ${textbox.login.username}    30s
     Input Text    ${textbox.login.username}    xyz
