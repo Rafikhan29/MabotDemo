@@ -16,8 +16,9 @@ before_script:
   - "export DISPLAY=:99.0"
   - "sh -e /etc/init.d/xvfb start"
   - "/sbin/start-stop-daemon --start --quiet --pidfile /tmp/custom_xvfb_99.pid --make-pidfile --background --exec /usr/bin/Xvfb -- :99 -ac -screen 0 1280x1024x16"
-  - curl https://gist.github.com/santiycr/5139581/raw/python_appengine_setup.py | python
-  - curl https://gist.github.com/santiycr/5139565/raw/sauce_connect_setup.sh | bash
+ # - curl https://gist.github.com/santiycr/5139581/raw/python_appengine_setup.py | python
+ # - curl https://gist.github.com/santiycr/5139565/raw/sauce_connect_setup.sh | bash
+  - curl https://gist.github.com/home/travis/build/MabotDemo/sauce_connect_setup.sh | bash
 
 script:
   - "pybot --outputdir MyBuild /home/travis/build/Rafikhan29/MabotDemo/automation_testsuites/TestCases/Home.txt"
