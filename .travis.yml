@@ -24,7 +24,8 @@ env:
     - S_ACCESS_KEY=47ab59b8-9b87-4433-8fa1-b02111cabbba
 script:
   #- "pybot --variable USERNAME:$S_USERNAME --variable ACCESS_KEY:$S_ACCESS_KEY --outputdir /home/travis/build/Rafikhan29/tests/ /home/travis/build/Rafikhan29/MabotDemo/automation_testsuites/TestCases/Home.txt"
-  - python client.py
+  - "pybot --outputdir /home/travis/build/Rafikhan29/tests/ /home/travis/build/Rafikhan29/MabotDemo/automation_testsuites/TestCases/Home.txt"
+  #- python client.py
   
 notifications:
   email:
