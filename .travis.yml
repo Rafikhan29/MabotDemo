@@ -9,35 +9,28 @@ install:
   - pip install selenium
   - pip install decorator
   - pip install docutils
+  - pip install gevent
+  - pip install pyzmq
+  - pip install zerorpc
   - gem install travis
-  # - pip install zerorpc
   #- "if [[ ${BROWSER} == 'ie' ]]; then pip install ie_only_pkg; fi"
 before_script:
   - "export DISPLAY=:99.0"
   - "sh -e /etc/init.d/xvfb start"
   - "/sbin/start-stop-daemon --start --quiet --pidfile /tmp/custom_xvfb_99.pid --make-pidfile --background --exec /usr/bin/Xvfb -- :99 -ac -screen 0 1280x1024x16"
- # - curl https://gist.github.com/santiycr/5139581/raw/python_appengine_setup.py | python
- # - curl https://gist.github.com/santiycr/5139565/raw/sauce_connect_setup.sh | bash
-  - curl https://gist.github.com/home/travis/build/MabotDemo/sauce_connect_setup.sh | bash
-
-script:
-  - "pybot --outputdir MyBuild /home/travis/build/Rafikhan29/MabotDemo/automation_testsuites/TestCases/Home.txt"
-  #- python client.py
-  
-addons:
-sauce_connect: 
-     #true
-  - username: "Rafikhan29"
-  - access_key: "47ab59b8-9b87-4433-8fa1-b02111cabbba"
-
-notifications:
-  email:
-    - vijaykumar.madi@gmail.com 
 env:
   global:
-   - secure: "Rafikhan29"
-   - secure: "47ab59b8-9b87-4433-8fa1-b02111cabbba"
-
+    - S_USERNAME=Rafikhan29
+    - S_ACCESS_KEY=47ab59b8-9b87-4433-8fa1-b02111cabbba
+script:
+  #- "pybot --variable USERNAME:$S_USERNAME --variable ACCESS_KEY:$S_ACCESS_KEY --outputdir /home/travis/build/Rafikhan29/tests/ /home/travis/build/Rafikhan29/MabotDemo/automation_testsuites/TestCases/Home.txt"
+  - python client.py
+  
+notifications:
+  email:
+    - rafi.pathan29@gmail.com 
+env:
+  global:
   - BROWSER=firefox
   #- BROWSER=ie # will be added when we have completed SauceLabs CI
   #- BROWSER=safari # will be added after #247 merged
