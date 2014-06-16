@@ -47,7 +47,10 @@ Execute manual steps
 Combining automation and manual test results
 --------------------------------------------
 * Save manual test case execution results from Mabot to file system path with .xml file.
-* Execute automation test scripts with the option to display the results in xml format. 
+* Execute automation test scripts with the option to display the results in xml format.
+
 `[Project dir]>pybot -o [OutPutDirectoryLocation]\filenamexxx.xml [TestSuiteName].txt`
+
 * Run rebot command to combine Automated and Manual test execution results.
+
 `>rebot --name Combined AutomationOutput_filename.xml manual__output_filename.xml`
