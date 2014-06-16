@@ -39,8 +39,15 @@ Execute manual steps
   $ mabot
 ~~~
 
-* Mabot UI is displayed. Using "File>> Open Dir", open the manual test suite to execute.
+* Mabot UI is displayed. Using "File>Open Dir", open the manual test suite to execute.
 * Execute the steps described in manual test steps and update the status accordingly. In Message enter the Actual Results.
-* As we observed in the above screen shot, click on each Test Case , Initially 'status' section shows Fail, after successful execution of manual test cases, update the status to Pass/Fail ,If Fails suggest the expected result in message box and store the results into user directory location.
+* As we observed in the above screen shot, click on each Test Case , Initially 'status' section shows Fail, after successful execution of manual test cases, update the status to `Pass/Fail` ,If Fails suggest the expected result in message box and store the results into user directory location.
 * Complete the manual test suite execution. On completion save the results by selecting "File>Save As" option, and enter the execution result file path along with the name with .xml extension.
 
+Combining automation and manual test results
+--------------------------------------------
+* Save manual test case execution results from Mabot to file system path with .xml file.
+* Execute automation test scripts with the option to display the results in xml format. 
+`[Project dir]>pybot -o [OutPutDirectoryLocation]\filenamexxx.xml [TestSuiteName].txt`
+* Run rebot command to combine Automated and Manual test execution results.
+`>rebot --name Combined AutomationOutput_filename.xml manual__output_filename.xml`
