@@ -1,4 +1,4 @@
 MabotDemo
 =========
-
-Created for demo project
+Authored by Rafikhan.
+Created for demo project 
