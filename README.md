@@ -9,4 +9,4 @@ Mabot Installation
 ------------------
 
 * Prerequisites: Install Python
-* Download and install `mabot.exe` file from `robotframework-mabot downloads`location.See[robotframework-mabot](https://code.google.com/p/robotframework-mabot/downloads/list)
+* Download and install `mabot.exe` file from `robotframework-mabot downloads`location.See [robotframework-mabot] (https://code.google.com/p/robotframework-mabot/downloads/list)
