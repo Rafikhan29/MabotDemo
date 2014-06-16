@@ -100,7 +100,7 @@ Install `mabot-0.10.win32.exe` for windows 32 bit version OS.
 
 * Create a directory structure for Automation Test Cases and Manual Test cases for any sample Project.
 
-![SampleProject](https://github.com/Rafikhan29/MabotDemo/blob/master/1.png)
+![Alt SampleProject.png](https://github.com/Rafikhan29/MabotDemo/blob/master/1.png)
 
 Designing manual steps
 ----------------------
