@@ -13,3 +13,6 @@ InvalidGmailLogin
     ${LoginError}    Get Text    id=errormsg_0_Passwd
     Should Contain    ${LoginError}    email or password you entered is incorrect.
     [Teardown]    Stop Application
+
+Test2
+    Comment sample to commit.
