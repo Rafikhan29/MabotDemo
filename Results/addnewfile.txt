@@ -1,2 +1,0 @@
-sample commit process
- in git hub
